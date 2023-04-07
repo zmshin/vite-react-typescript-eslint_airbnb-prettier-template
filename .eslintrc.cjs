@@ -23,5 +23,18 @@ module.exports = {
 
   rules: {
     'react/react-in-jsx-scope': 0,
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
+    'react/function-component-definition': [
+      2,
+      {
+        namedComponents: ['arrow-function', 'function-declaration'],
+        unnamedComponents: 'arrow-function',
+      },
+    ],
   },
 };
